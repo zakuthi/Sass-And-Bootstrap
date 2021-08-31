@@ -1,0 +1,20 @@
+@import "custombootstrap";
+
+body {
+  background-color: $blue;
+  background-image: url(../images/archie_pic.jpg);
+}
+
+$header-gradient: linear-gradient(
+  90deg,
+  rgba($primary, 0.5) 2%,
+  rgba($secondary, 0.15) 60%
+) !default;
+.navbar {
+  //background-image: url(../images/archie_pic.jpg);
+  background: $header-gradient, url(../images/archie_pic.jpg);
+  height: 300px;
+  background-position: center center;
+  background-size: cover;
+  clip-path: ellipse(99% 93% at 51% 3%);
+}
